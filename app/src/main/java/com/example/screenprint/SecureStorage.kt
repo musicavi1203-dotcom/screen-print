@@ -66,6 +66,11 @@ object SecureStorage {
         return hashPassword(password, storedSalt) == storedHash
     }
 
+    // הפונקציה החדשה שהוספנו
+    fun hasPassword(): Boolean {
+        return encryptedPrefs.contains(KEY_PASSWORD_HASH)
+    }
+
     private fun generateRandomSalt(): String {
         val random = java.security.SecureRandom()
         val saltBytes = ByteArray(16)
