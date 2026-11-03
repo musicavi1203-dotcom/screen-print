@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ScreenPrint</string>
+    <string name="welcome">ברוך הבא ל-ScreenPrint</string>
+    <string name="register_title">רישום ביומטרי ראשוני</string>
+    <string name="register_instructions">הנח את האצבע על האזור המיועד ולחץ בעדינות למשך חצי שנייה. (חזור על הפעולה 3 פעמים)</string>
+    <string name="auth_title">אימות ביומטרי</string>
+    <string name="auth_instructions">הנח את האצבע לאימות</string>
+    <string name="fallback_btn">שכחתי / לא מזוהה - כניסה עם סיסמה</string>
+    <string name="password_hint">הזן סיסמת גיבוי</string>
+    <string name="login_btn">התחבר</string>
+    <string name="set_password_title">הגדר סיסמת גיבוי</string>
+    <string name="save_btn">שמור</string>
+    <string name="success_unlock">זוהה בהצלחה! המכשיר נפתח.</string>
+    <string name="error_auth">האימות נכשל. נסה שוב.</string>
+    <string name="error_password">סיסמה שגויה.</string>
+    <string name="register_success">הרישום הושלם בהצלחה!</string>
+    <string name="register_need_more">נדרשות עוד דגימות. (נותרו: %1$d)</string>
+    <string name="touch_here">אזור מגע ביומטרי</string>
+    <string name="need_register_first">נא להירשם קודם</string>
+</resources>
