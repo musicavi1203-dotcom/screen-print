@@ -10,15 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ScreenPrint"
         tools:targetApi="31">
+        
+        <!-- מסך הבדיקה - מוגדר כ-Launcher הראשי כרגע -->
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:windowSoftInputMode="adjustResize">
+            android:name=".SensorTestActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- המסך הראשי של האפליקציה (מושבת זמנית מה-Launcher) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+            
     </application>
 
 </manifest>
