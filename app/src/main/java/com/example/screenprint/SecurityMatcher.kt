@@ -17,9 +17,9 @@ object SecurityMatcher {
         if (sizeDiff > 0.4f) return 0 
         score -= (sizeDiff * 60)
 
-        // 3. מהירות (משקל בינוני)
+        // 3. מהירות (משקל בינוני) - תוקן ל-Float
         val velocityDiff = abs(stored.avgVelocity - current.avgVelocity)
-        score -= (velocityDiff * 2).coerceAtMost(15.0)
+        score -= (velocityDiff * 2).coerceAtMost(15.0f).toDouble()
 
         // 4. משך זמן (משקל בינוני)
         val durationDiff = abs(stored.duration - current.duration)
